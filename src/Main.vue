@@ -74,7 +74,7 @@
         }, headers);
 
         this.toggle = true
-        this.response = "PLEASE SAVE YOUR, Secret Link - [http://192.168.1.7:5173/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
+        this.response = "Please Share the, Secret Link - [https://main.d1t0nhgavad3l.amplifyapp.com/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
         this.message = "";
         this.secretkey = "";
         this.activeduration = "";
