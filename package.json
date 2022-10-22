@@ -2,9 +2,8 @@
   "name": "secrets-share",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 4173"
+    "build": "cross-env BABEL_ENV=dev vue-cli-service build",
+    "serve": "cross-env BABEL_ENV=dev vue-cli-service serve",
   },
   "dependencies": {
     "axios": "^0.27.2",
