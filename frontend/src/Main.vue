@@ -74,8 +74,8 @@
         }, headers);
 
         this.toggle = true
-        // this.response = "Please Share the, Secret Link - [https://main.d1t0nhgavad3l.amplifyapp.com/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
-        this.response = "Please Share the, Secret Link - [" + import.meta.env.VITE_WEB_APP_URL + "/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
+        this.response = "Please Share the, Secret Link - [https://main.d3eeefp9am25z1.amplifyapp.com/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
+        // this.response = "Please Share the, Secret Link - [" + import.meta.env.VITE_WEB_APP_URL + "/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
         this.message = "";
         this.secretkey = "";
         this.activeduration = "";
