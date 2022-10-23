@@ -60,7 +60,7 @@
     },
     methods: {
       async addSecret() {
-        let url = 'https://d27tjzwjeor7kusgwczqu2bu440qsygk.lambda-url.us-east-1.on.aws'
+        let url = import.meta.env.VITE_ADD_LAMBDA_END_POINT
         let headers = {
           headers: {
             'Content-Type': 'application/json',
@@ -74,7 +74,8 @@
         }, headers);
 
         this.toggle = true
-        this.response = "Please Share the, Secret Link - [https://main.d1t0nhgavad3l.amplifyapp.com/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
+        // this.response = "Please Share the, Secret Link - [https://main.d1t0nhgavad3l.amplifyapp.com/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
+        this.response = "Please Share the, Secret Link - [" + import.meta.env.VITE_WEB_APP_URL + "/secret/" + res.data + "] & Secret Key - [" + this.secretkey + "]";
         this.message = "";
         this.secretkey = "";
         this.activeduration = "";

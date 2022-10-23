@@ -58,18 +58,7 @@
           this.toggle = true
           this.response = res.data;
           this.secretkey = "";
-          // if (res.status == 200) {
-          //   this.delSecret()
-          // }
         },
-        // async delSecret() {
-        //     console.log("Deleting....")
-        //   const res = await axios.post(`https://d27tjzwjeor7kusgwczqu2bu440qsygk.lambda-url.us-east-1.on.aws/`, {
-        //     secretkey: this.secretkey
-        //   });
-        //   this.response = res.status;
-        //   this.secretkey = "";
-        // },
       },
     };
   </script>
